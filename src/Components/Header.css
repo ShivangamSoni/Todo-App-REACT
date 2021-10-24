@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header__title {
+  color: var(--primary-color);
+}
+
+.header .btn {
+  padding: 0.5em 2em;
+}
+
+.header .btn + .btn {
+  margin-left: 2em;
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    flex-flow: column nowrap;
+  }
+
+  .header__title {
+    margin-bottom: 0.5em;
+  }
+}

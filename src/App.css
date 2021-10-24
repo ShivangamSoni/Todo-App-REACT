@@ -1,0 +1,41 @@
+.main {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  gap: 1rem 0.5rem;
+}
+
+.empty {
+  text-align: center;
+  font-size: 1.2em;
+  margin-top: 2em;
+}
+
+.btn {
+  appearance: none;
+  cursor: pointer;
+  border: none;
+  outline: 0.2em solid currentColor;
+  padding: 1em;
+  border-radius: 2em;
+  background-color: transparent;
+  color: var(--white-color);
+}
+
+.btn:hover,
+.btn:focus {
+  color: var(--accent-color);
+  box-shadow: 0 0 1em currentColor;
+}
+
+@media screen and (max-width: 1024px) {
+  .main {
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    grid-template-columns: repeat(1, minmax(300px, 1fr));
+  }
+}

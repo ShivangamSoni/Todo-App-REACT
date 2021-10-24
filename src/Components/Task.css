@@ -1,0 +1,38 @@
+.task {
+  text-align: center;
+  margin: 0.5em auto;
+  width: 95%;
+}
+
+.task__input {
+  appearance: none;
+  position: relative;
+  left: -2rem;
+}
+
+.task__btn {
+  outline-width: 0.15em !important;
+  padding: 0 0.5em !important;
+  margin-right: 0.5em;
+}
+
+.task__btn:hover,
+.task__btn:focus {
+  box-shadow: 0 0 1em currentColor;
+}
+
+.task__desc {
+  font-size: 1.2em;
+}
+
+.task.pending .task__btn {
+  color: var(--done-color);
+}
+
+.task.complete .task__btn {
+  color: var(--undo-color);
+}
+
+.task.complete .task__desc {
+  text-decoration: 0.15em solid line-through var(--red-color);
+}

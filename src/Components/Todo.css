@@ -1,0 +1,38 @@
+.todo {
+  padding: 1em;
+  background-color: var(--base-color);
+  height: 350px;
+  border-radius: 1em;
+  position: relative;
+}
+
+.todo__title {
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 0 0.2em currentColor;
+  margin-bottom: 0.5em;
+  border-bottom: 0.1em solid var(--base-color2);
+  color: var(--primary-color);
+  overflow-x: auto;
+}
+
+.todo__tasks {
+  height: 76%;
+  overflow-y: auto;
+  background-color: var(--base-color2);
+}
+
+.todo__btns {
+  position: absolute;
+  bottom: 0.5em;
+  left: 1em;
+  right: 1em;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.todo__btns .btn {
+  padding: 0.2em 1em;
+}
